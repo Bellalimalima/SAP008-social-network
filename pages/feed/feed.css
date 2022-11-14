@@ -1,0 +1,246 @@
+.wrapper-feed {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;       
+}
+
+.header-feed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+
+.logo-feed {
+    width: 45vw;
+    object-fit: scale-down;
+    margin-left: 0;
+}
+
+.btn-logout {
+    width: 20%;
+    border: solid 2px var(--roxo);
+    border-radius: 15px;    
+    padding: 5px;
+    color: var(--roxo);
+    background-color: var(--branco);
+    text-transform: uppercase;
+    height: 5%;
+}
+
+.btn-logout:hover {    
+    cursor:  pointer;
+    opacity: 0.8;
+}
+
+.form-feed {
+    margin: 5% 0 0;
+    padding: 3% 0;    
+    width: 90%;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+    background: var(--lilas);
+    border-radius: 20px;
+    box-shadow: 0px 0px 45px var(--roxo);    
+}
+
+.label-input-publish {
+    border: solid 1px var(--violeta);
+    width: 90%;
+    height: 11vh;  
+    border-radius: 15px;
+}
+
+.input-publish {    
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.alert-publish, .save-alert {
+    color: var(--roxo);
+    margin: 2% 0 0;    
+    background: yellow;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.btn {
+    margin: 3% 0 0;
+    border: solid 2px var(--roxo);
+    border-radius: 15px;
+    width: 28%;
+    padding: 1%;
+    color: var(--roxo);
+    background-color: var(--branco);    
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--roxo);    
+    color: var(--branco);
+    cursor:  pointer;
+}
+
+.post-container {    
+    width: 90%;    
+    border-radius: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255, 0);
+    margin: 5% 0 10%;
+}
+
+.post {
+    border: solid 1px var(--violeta);
+    width: 100%;    
+    padding: 3%;
+    background-color: var(--lilas);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px var(--roxo);
+    color: var(--roxo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1% 0 1%;
+}
+
+.postTxt {
+    width: 100%;    
+    padding: 3% 2%;
+}
+
+.txtArea {
+    border-radius: 10px;
+    margin: 2% 0 0;
+}
+.name {
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-align: initial;
+}
+
+.btns-post-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 4% 0 2%;
+}
+
+.btn-post {    
+    border-radius: 15px;
+    width: 25%;
+    padding: 2px;    
+    color: var(--branco);
+    background-color: var(--roxo);
+    text-transform: uppercase;    
+}
+
+.btn-post:hover {
+    opacity: 0.8;  
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.confirmation-text {
+    text-align: center;
+    margin: 0 0 3%;
+    background: yellow;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.btn-like {
+    background-color: var(--lilas);
+    color: var(--branco);    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 2% 90% 0 0;
+}
+
+.btn-like:hover {
+    cursor: pointer;
+}
+
+.like::after {
+    content:attr(data-count-likes);
+}
+
+.heart-icon {
+    width: 60%;
+}
+
+.confimation-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+.confirm {
+    margin: 0 2% 0;
+}
+
+.hide {
+    display:none;
+}
+
+.footer-container {    
+    background-color: var(--roxo);
+    width: 100%;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 2%;
+    color: var(--lilas);
+    width: 100%;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.links-footer:hover {
+    color: var(--lilas);
+}
+
+@media screen and (min-width: 1024px) {  
+    .header-feed {
+        height: 20%;
+        padding: 1% 2%;
+    }
+
+    .logo-feed {
+        width: 25vw;
+    }
+
+    .form-feed {
+        width: 60%;        
+    }
+
+    .label-input-publish {       
+        height: 15vh;
+    }
+
+    .post-container {
+        width: 60%;        
+    }
+
+    .btn-logout {
+        width: 10%;
+    }
+}

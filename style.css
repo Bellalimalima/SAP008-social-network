@@ -1,0 +1,32 @@
+@import url('./pages/login/login.css');
+@import url('./pages/signup/signup.css');
+@import url('./pages/feed/feed.css');
+
+@font-face {
+  font-family: "girlsStory";
+  src: url("./letra/girlsStory.ttf") format("truetype"); 
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;  
+  font-size: 16px;
+  font-family: girlsStory, Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --branco: aliceblue;
+  --roxo: #5E17EB;
+  --violeta: #9B59B6;
+  --lilas: #A87CFE;
+  --black: #000000;
+}
+
+body,
+html {
+  background: linear-gradient(#5E17EB, #A87CFE);   
+  background-size: cover;
+  background-attachment: fixed;  
+}
